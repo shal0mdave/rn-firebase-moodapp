@@ -7,7 +7,7 @@ import SmileSvg from '../../svgs/Smile';
 export default Start = () =>{
   	return (
 		<View style={styles.container}>
-			<StatusBar style="auto" />
+			<StatusBar style="auto" /> 
 			<SmileSvg fill="black" />
 			<Text style={styles.name}>Mood App</Text>
 			<TouchableOpacity
