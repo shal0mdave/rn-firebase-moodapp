@@ -1,21 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import * as React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 
-import SplashScreen from './Screens/Start/Start'
+import StartScreen from './Screens/Start/Start';
+import AuthScreen from './Screens/Auth/Auth';
 
-export default function App() {
+const Stack = createStackNavigator();
+
+const App = () => {
     return (
-        <SplashScreen />
+        <NavigationContainer>
+            <Stack.Navigator>
+                <Stack.Screen options={{headerShown: false}} name="Start" component={StartScreen} />
+                <Stack.Screen options={{headerShown: false}} name="Auth" component={AuthScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
     );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
- 
+export default App;

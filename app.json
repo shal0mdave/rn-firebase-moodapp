@@ -17,7 +17,18 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "192180057280-16ls3qk4gmkoggck0pm37r2odjnq6nl7.apps.googleusercontent.com",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.192180057280-16ls3qk4gmkoggck0pm37r2odjnq6nl7"
+        }
+      },
+      "googleServicesFile": "./utils/GoogleService-Info.plist"
+    },
+    "android": {
+      "package": "com.devpine.moodapp",
+      "googleServicesFile": "./utils/google-services.json"
     },
     "web": {
       "favicon": "./assets/favicon.png"

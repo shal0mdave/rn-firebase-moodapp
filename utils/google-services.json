@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "192180057280",
+    "firebase_url": "https://mood-app-176b5.firebaseio.com",
+    "project_id": "mood-app-176b5",
+    "storage_bucket": "mood-app-176b5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192180057280:android:ee3cb13907eb079f0c6925",
+        "android_client_info": {
+          "package_name": "com.devpine.moodapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192180057280-itafdqekpsd6fjgs5si6hn51tn77d86q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALt9jsCeRqrxe3Fp7V1n8wzdkQ_Gt0VXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192180057280-itafdqekpsd6fjgs5si6hn51tn77d86q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "192180057280-16ls3qk4gmkoggck0pm37r2odjnq6nl7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "mood-app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -4,13 +4,14 @@ import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 
 import SmileSvg from '../../svgs/Smile';
 
-export default Start = () =>{
+export default Start = ({navigation}) =>{
   	return (
 		<View style={styles.container}>
 			<StatusBar style="auto" /> 
-			<SmileSvg fill="black" />
+			<SmileSvg style={styles.logo} fill="black" />
 			<Text style={styles.name}>Mood App</Text>
 			<TouchableOpacity
+				onPress={() => navigation.navigate('Auth')}
 				style={styles.get_started}>
 				<Text style={styles.button_text}>Get Started</Text>
 			</TouchableOpacity>
@@ -24,6 +25,10 @@ const styles = StyleSheet.create({
 		backgroundColor: '#fff',
 		alignItems: 'center',
 		justifyContent: 'center',
+	},
+	logo: {
+		height: 150,
+		width: 150,
 	},
 	name: {
 		marginTop: 20,
